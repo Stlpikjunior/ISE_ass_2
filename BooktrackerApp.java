@@ -111,13 +111,119 @@ public class BooktrackerApp {
     }
 
     // Other menu operations (implement similarly)
-    private static void changeBookTitle() { /* implementation */ }
-    private static void deleteRecord() { /* implementation */ }
-    private static void calculateMeanAge() { /* implementation */ }
-    private static void countUsersPerBook() { /* implementation */ }
-    private static void calculateTotalPages() { /* implementation */ }
-    private static void countUsersWithMultipleBooks() { /* implementation */ }
-    private static void addNameColumn() { /* implementation */ }
+    private static void changeBookTitle() {
+        System.out.print("Enter habitID to update: ");
+        int habitID = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+        System.out.print("Enter new book title: ");
+        String newTitle = scanner.nextLine();
+
+        String sql = "UPDATE ReadingHabit SET book = ? WHERE habitID = ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, newTitle);
+            pstmt.setInt(2, habitID);
+            int affectedRows = pstmt.executeUpdate();
+            if (affectedRows > 0) {
+                System.out.println("Book title updated successfully");
+            } else {
+                System.out.println("No record found with habitID: " + habitID);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error updating book title: " + e.getMessage());
+        }
+    }
+
+    private static void deleteRecord() {
+        System.out.print("Enter habitID to delete: ");
+        int habitID = scanner.nextInt();
+
+        String sql = "DELETE FROM ReadingHabit WHERE habitID = ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, habitID);
+            int affectedRows = pstmt.executeUpdate();
+            if (affectedRows > 0) {
+                System.out.println("Record deleted successfully");
+            } else {
+                System.out.println("No record found with habitID: " + habitID);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error deleting record: " + e.getMessage());
+        }
+    }
+
+    private static void calculateMeanAge() {
+        String sql = "SELECT AVG(age) FROM User";
+        try (Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            if (rs.next()) {
+                double meanAge = rs.getDouble(1);
+                System.out.printf("Mean age of users: %.2f years\n", meanAge);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error calculating mean age: " + e.getMessage());
+        }
+    }
+
+    private static void countUsersPerBook() {
+        scanner.nextLine(); // Clear buffer
+        System.out.print("Enter book title to search: ");
+        String bookTitle = scanner.nextLine();
+
+        String sql = "SELECT COUNT(DISTINCT user) FROM ReadingHabit WHERE book LIKE ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, "%" + bookTitle + "%");
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                int count = rs.getInt(1);
+                System.out.println("Number of users who read '" + bookTitle + "': " + count);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error counting users per book: " + e.getMessage());
+        }
+    }
+
+    private static void calculateTotalPages() {
+        String sql = "SELECT SUM(pagesRead) FROM ReadingHabit";
+        try (Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            if (rs.next()) {
+                int totalPages = rs.getInt(1);
+                System.out.println("Total pages read by all users: " + totalPages);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error calculating total pages: " + e.getMessage());
+        }
+    }
+
+    private static void countUsersWithMultipleBooks() {
+        String sql = "SELECT COUNT(*) FROM (" +
+                "SELECT user FROM ReadingHabit " +
+                "GROUP BY user HAVING COUNT(DISTINCT book) > 1)";
+        try (Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            if (rs.next()) {
+                int count = rs.getInt(1);
+                System.out.println("Number of users who read more than one book: " + count);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error counting users with multiple books: " + e.getMessage());
+        }
+    }
+
+    private static void addNameColumn() {
+        try (Statement stmt = conn.createStatement()) {
+            // Check if column already exists
+            ResultSet rs = conn.getMetaData().getColumns(null, null, "User", "Name");
+            if (rs.next()) {
+                System.out.println("Name column already exists in User table");
+            } else {
+                stmt.execute("ALTER TABLE User ADD COLUMN Name TEXT DEFAULT ''");
+                System.out.println("Name column added to User table");
+            }
+        } catch (SQLException e) {
+            System.out.println("Error adding Name column: " + e.getMessage());
+        }
+    }
 
     // Database operations
     private static void connectToDatabase() {
