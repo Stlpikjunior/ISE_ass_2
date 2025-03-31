@@ -1,0 +1,101 @@
+habitID,userID,pagesRead,book,submissionMoment
+1,41,2,Data Analysis Using R (Low Priced Edition): A Primer for Data Scientist,08/02/2023 19:49
+2,46,107,"Head First Data Analysis: A learner's guide to big numbers, statistics, and good decisions",15/08/2023 22:32
+3,25,31,"Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython",07/07/2023 01:56
+4,48,139,"Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython",13/11/2023 12:00
+5,44,22,Excel Data Analysis For Dummies (For Dummies (Computer/Tech)),02/01/2023 22:09
+6,1,19,Getting Started with Natural Language Processing,02/03/2023 04:10
+7,13,89,SQL for Data Analysis: Advanced Techniques for Transforming Data into Insights,08/09/2023 21:15
+8,37,117,Qualitative Data Analysis: A Methods Sourcebook,02/05/2023 21:34
+9,32,143,Topological Data Analysis with Applications,06/03/2023 09:20
+10,16,82,"R in Action, Third Edition: Data analysis and graphics with R and Tidyverse",04/09/2023 20:44
+11,7,54,"R in Action, Third Edition: Data analysis and graphics with R and Tidyverse",13/09/2023 08:23
+12,33,18,SQL for Data Analytics: Perform efficient and fast data analysis with the power of SQL,13/02/2023 06:48
+13,4,133,Topological Data Analysis with Applications,15/04/2023 21:02
+14,59,83,Getting Started with Natural Language Processing,28/05/2023 16:34
+15,35,137,Getting Started with Natural Language Processing,12/10/2023 17:45
+16,6,24,"SQL QuickStart Guide: The Simplified Beginner's Guide to Managing, Analyzing, and Manipulating Data With SQL",22/10/2023 01:39
+17,62,13,Getting Started with Natural Language Processing,05/06/2023 00:13
+18,2,107,Python in easy steps,16/11/2023 11:14
+19,51,100,Think Python: How to Think Like a Computer Scientist,09/01/2023 11:28
+20,10,146,Quantum Machine Learning and Optimisation in Finance: On the Road to Quantum Advantage,19/04/2023 01:38
+21,2,12,Python Tricks: A Buffet of Awesome Python Features,17/07/2023 09:05
+22,63,36,Think Bayes: Bayesian Statistics in Python (O'reilly),30/07/2023 00:54
+23,34,143,Think Bayes: Bayesian Statistics in Python (O'reilly),28/02/2023 03:30
+24,14,62,Python Data Science Handbook: Essential Tools for Working with Data,01/07/2023 07:09
+25,50,106,Data Science for Supply Chain Forecasting,02/12/2023 05:08
+26,15,44,Analyzing Social Networks Using R,02/09/2023 07:39
+27,64,6,"Fluent Python: Clear, Concise, and Effective Programming",17/06/2023 19:32
+28,22,66,Getting Started with Natural Language Processing,24/09/2023 03:39
+29,36,43,Boa Vs. Python,07/03/2023 12:08
+30,61,98,Practical Linear Algebra for Data Science: From Core Concepts to Applications Using Python,22/01/2023 00:19
+31,25,12,Preparing For A Data Interview: Learn Enough Python For A Project Or An Interview,24/02/2023 10:31
+32,2,48,Coding Games in Python (Computer Coding for Kids),01/12/2023 20:17
+33,55,144,Python for Everybody: Exploring Data in Python 3,28/05/2023 02:02
+34,19,107,Think Python: How to Think Like a Computer Scientist,01/06/2023 23:28
+35,56,86,Categorical Data Analysis,03/08/2023 08:13
+36,37,59,Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures,05/08/2023 22:40
+37,8,21,Analyzing Social Networks Using R,04/02/2023 10:44
+38,53,31,Python for Everybody: Exploring Data in Python 3,20/01/2023 06:19
+39,33,121,"Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and The Cloud",20/05/2023 04:33
+40,44,46,Practical Linear Algebra for Data Science: From Core Concepts to Applications Using Python,17/08/2023 23:39
+41,47,57,Thematic Analysis: A Practical Guide,03/06/2023 02:40
+42,59,68,Statistics and Data Analysis for Financial Engineering: with R examples (Springer Texts in Statistics),15/06/2023 10:35
+43,62,116,Analyzing Social Networks Using R,27/04/2023 19:17
+44,51,23,Think Bayes: Bayesian Statistics in Python (O'reilly),30/04/2023 08:01
+45,24,10,Categorical Data Analysis,25/10/2023 21:12
+46,64,85,Qualitative Data Analysis: A Methods Sourcebook,22/01/2023 05:44
+47,57,38,Statistical Analysis of Network Data with R (Use R!),01/10/2023 15:01
+48,1,18,"Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",23/06/2023 14:19
+49,21,38,Categorical Data Analysis,30/10/2023 13:31
+50,7,25,Bite-Size Python: An Introduction to Python Programming,29/07/2023 17:22
+51,57,98,Data Science for Supply Chain Forecasting,23/06/2023 20:30
+52,53,146,Bite-Size Python: An Introduction to Python Programming,07/02/2023 20:40
+53,38,68,Topological Data Analysis with Applications,04/08/2023 05:21
+54,64,32,Topological Data Analysis with Applications,19/04/2023 17:57
+55,65,96,Qualitative Data Analysis: A Methods Sourcebook,27/08/2023 00:36
+56,25,7,Topological Data Analysis with Applications,30/03/2023 18:08
+57,22,127,Bite-Size Python: An Introduction to Python Programming,08/03/2023 09:28
+58,62,83,Boa Vs. Python,18/03/2023 08:53
+59,64,72,Time Series Forecasting in Python,10/07/2023 04:37
+60,55,94,Python in easy steps,13/02/2023 11:10
+61,41,104,Spatial Analysis with R,08/02/2023 22:08
+62,47,52,R Graphics Cookbook: Practical Recipes for Visualizing Data,06/07/2023 15:26
+63,31,81,A History of Data Visualization and Graphic Communication,13/09/2023 00:20
+64,50,136,Murach's R for Data Analysis,14/02/2023 03:52
+65,42,14,Topological Data Analysis with Applications,14/09/2023 08:49
+66,10,9,The Data Lakehouse Architecture,17/06/2023 10:09
+67,14,93,Topological Data Analysis with Applications,15/08/2023 02:59
+68,12,41,Boa Vs. Python,03/05/2023 10:42
+69,58,98,Qualitative Data Analysis: A Methods Sourcebook,09/11/2023 05:57
+70,34,53,Everyday Adventures with Unruly Data,15/01/2023 20:27
+71,25,19,Machine Learning: A First Course for Engineers and Scientists,04/10/2023 15:51
+72,30,91,Python Data Analysis - Second Edition,22/07/2023 22:20
+73,36,106,Exploratory Data Analysis with MATLAB (Chapman & Hall/CRC Computer Science & Data Analysis),18/10/2023 10:59
+74,61,104,Essential R For Data Analysis: Data manipulation and visualization using R for beginning and intermediate users,08/01/2023 23:25
+75,59,120,R in Action: Data Analysis and Graphics with R,15/10/2023 00:34
+76,61,37,R in Action: Data Analysis and Graphics with R,23/10/2023 12:38
+77,58,93,Qualitative Data Analysis: A Methods Sourcebook,18/11/2023 17:26
+78,62,72,Longitudinal Data Analysis,03/11/2023 14:11
+79,47,87,Topological Data Analysis with Applications,03/04/2023 07:49
+80,63,143,Statistical Analysis of Network Data with R (Use R!),05/12/2023 10:16
+81,19,33,"Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",05/07/2023 11:54
+82,32,4,Boa Vs. Python,02/09/2023 04:04
+83,12,29,Designing Cloud Data Platforms,25/11/2023 06:21
+84,20,86,Multivariate Data Analysis,08/04/2023 11:01
+85,60,41,Bite-Size Python: An Introduction to Python Programming,10/12/2023 16:32
+86,46,18,Data Analysis with Python and PySpark,15/08/2023 03:35
+87,46,124,Boas and Pythons of the World,14/04/2023 01:00
+88,43,117,Qualitative Data Analysis: A Methods Sourcebook,30/01/2023 00:26
+89,55,21,Qualitative Data Analysis: A Methods Sourcebook,09/10/2023 11:38
+90,9,150,Bayesian Data Analysis for the Behavioral and Neural Sciences,14/01/2023 23:59
+91,30,62,Root Cause Analysis,16/10/2023 03:35
+92,21,138,Python Crash Course,08/04/2023 04:31
+93,55,44,The Pythons' Autobiography By The Pythons,16/12/2023 01:59
+94,50,2,Boa Vs. Python,29/04/2023 00:23
+95,40,100,Topological Data Analysis with Applications,06/05/2023 12:12
+96,14,75,Data Analysis with Python and PySpark,02/03/2023 20:57
+97,39,136,Topological Data Analysis with Applications,07/12/2023 08:46
+98,2,100,Topological Data Analysis with Applications,20/12/2023 03:24
+99,19,124,Statistical Analysis of Network Data with R (Use R!),01/02/2023 17:38
+100,32,95,"Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",24/08/2023 08:41
